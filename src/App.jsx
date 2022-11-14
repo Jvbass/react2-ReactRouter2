@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./views/Home.jsx";
 import Pokemones from "./views/Pokemones.jsx";
 import Pokemon from "./views/Pokemon.jsx";
+import Notfound from "./views/NotFound.jsx";
 
 // import components
 import Navbar from "./components/Navbar.jsx";
@@ -34,9 +35,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/pokemones" element={<Pokemones />}></Route>
-            <Route path="/pokemones/:name" element={<Pokemon />}></Route>{" "}
+            <Route path="/pokemones/:name" element={<Pokemon />}></Route>
             {/* definimos el parametro variable ":name" en la url para indicar que
             este valor debe ser capturado */}
+            <Route path="*" element={<Notfound />}></Route>
           </Routes>
         </BrowserRouter>
       </Context.Provider>

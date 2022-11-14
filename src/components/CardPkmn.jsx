@@ -1,8 +1,8 @@
 const CardPkmn = ({ pokemon }) => {
   return (
-    <div>
-      <h3>{pokemon.name}</h3>
+    <div className="pokeimage">
       <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} alt={pokemon.name} />
+      <h3>{pokemon.name}</h3>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Pokemones = () => {
     navigate(`/pokemones/${selected}`);
   };
   return (
-    <main>
+    <main className="pokeform">
       <h1>Selecciona un Pokémon</h1>
       <select onChange={(e) => setSelected(e.target.value)}>
         <option hidden value="0">

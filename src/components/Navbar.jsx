@@ -4,7 +4,7 @@ const Navbar = () => {
   const setActive = ({ isActive }) => (isActive ? "active" : undefined);
   return (
     <header>
-      <h3>PokeDex</h3>
+      <h2>PokeDex</h2>
 
       <nav>
         <NavLink to="/" className={setActive} end>
